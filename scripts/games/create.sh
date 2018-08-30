@@ -5,7 +5,8 @@ curl --include --request POST "http://localhost:4741/games" \
   --data '{
     "game": {
       "name": "'"${NAME}"'",
-      "comment": "'"${COMMENT}"'"
+      "comment": "'"${COMMENT}"'",
+      "user_id": "'"${USERID}"'"
     }
   }'
 

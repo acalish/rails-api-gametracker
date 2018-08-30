@@ -3,6 +3,7 @@ curl --include --request PATCH "http://localhost:4741/games/${ID}" \
   --data '{
     "game": {
       "name": "'"${NAME}"'",
-      "comment": "'"${COMMENT}"'"
+      "comment": "'"${COMMENT}"'",
+      "user_id": "'"${USERID}"'"
     }
   }'
