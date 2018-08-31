@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'pry'
+
 class GamesController < OpenReadController
   before_action :set_game, only: %i[show update destroy]
 
@@ -18,9 +20,8 @@ class GamesController < OpenReadController
   # POST /games
   def create
     @game = current_user.games.build(game_params)
-
     if @game.save
-      render json: @game, status: :created, location: @game
+      render json: @game, status: :created
     else
       render json: @game.errors, status: :unprocessable_entity
     end
