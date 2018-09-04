@@ -1,15 +1,13 @@
 # frozen_string_literal: true
 
-require 'pry'
-
-class GamesController < ProtectedController
+# class GamesController < ProtectedController
+class GamesController < OpenReadController
   before_action :set_game, only: %i[show update destroy]
 
   # GET /games
   def index
     # @games = Game.all
-    @games = current_user.games.all
-
+    @games = current_user.games
     render json: @games
   end
 
@@ -46,8 +44,8 @@ class GamesController < ProtectedController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_game
-    @game = current_user.games
-    # @game = current_user.games.find(params[:id])
+    # @game = current_user.games
+    @game = current_user.games.find(params[:id])
   end
 
   # Only allow a trusted parameter "white list" through.
