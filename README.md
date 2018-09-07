@@ -1,5 +1,5 @@
 GameTracker is the first full stack app I have made. It is a place where people can register as users and then keep track of games (ideally board games) by providing comments about them.
-My heroku link: https://sheltered-headland-81825.herokuapp.com  My client side is hosted here: https://github.com/acalish/gametracker-client, and the deployed site is available here: https://acalish.github.io/gametracker-client/.  My front end can make successful GET / POST / UPDATE / DELETE calls to my back end.
+My client repo is hosted here: https://github.com/acalish/gametracker-client, and the deployed site is available here: https://acalish.github.io/gametracker-client/.  My front end can make successful GET / POST / UPDATE / DELETE calls to my back end.
 
 ## Entity Relationship Diagrams
 can be found here:
